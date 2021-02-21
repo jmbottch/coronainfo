@@ -71,7 +71,7 @@
         <div class="col-md-12">
             <mat-card class="health-card">
                 <mat-card-header>
-                    <img mat-card-avatar src="" alt="" />
+                    <img mat-card-avatar src="https://static.thenounproject.com/png/39490-200.png" alt="healthy-icon" />
                     <mat-card-title>Adviezen gezond leven</mat-card-title>
                     <mat-card-subtitle>Het is belangrijk dat uw weerstand goed werkt.</mat-card-subtitle>
                 </mat-card-header>
@@ -119,7 +119,8 @@
         <div class="col-md-12">
             <mat-card class="BMI-card">
                 <mat-card-header>
-                    <img mat-card-avatar src="" alt="" />
+                    <img mat-card-avatar src="https://i.pinimg.com/originals/13/e7/a5/13e7a54a92c6258020b2c4130f5c0b4a.png"
+                        alt="bmi-icon" />
                     <mat-card-title>BMI calculator</mat-card-title>
                     <mat-card-subtitle>creëer een beeld.</mat-card-subtitle>
                 </mat-card-header>
@@ -130,8 +131,8 @@
                     </p>
                     <p>De BMI (Body Mass Index) is een internationaal gebruikte meetmethode die laat zien of je een
                         gezond gewicht hebt in verhouding tot je lengte. Je kunt de BMI berekenen voor vrouwen, mannen
-                        en kinderen vanaf 2 jaar. De BMI is minder geschikt voor als je heel gespierd bent, zwanger
-                        bent, borstvoeding geeft of van Aziatische afkomst bent.</p>
+                        en kinderen vanaf 2 jaar. De BMI is minder geschikt voor als borstvoeding geeft of heel gespierd
+                        zwanger, of van Aziatische afkomst bent.</p>
                     <p>
                         Vul uw geslacht, gewicht, leeftijd en lengte in om uw BMI te berekenen.
                     </p>
@@ -139,7 +140,7 @@
                     <form [formGroup]="bmiGroup" (ngSumbit)="onSubmit()" *ngIf="!submitted">
                         <div class="row">
                             <div class="col-md-6">
-                                <mat-form-field appearance="fill" class="ml-2">
+                                <mat-form-field appearance="fill" class="ml-2" color="accent">
                                     <mat-label>Geslacht</mat-label>
                                     <mat-select formControlName="gender" required>
                                         <mat-option value="m">Man</mat-option>
@@ -147,19 +148,19 @@
                                     </mat-select>
                                     <mat-error *ngIf="form.gender.invalid">Kies een optie</mat-error>
                                 </mat-form-field>
-                                <mat-form-field appearance="fill" class="ml-2">
+                                <mat-form-field appearance="fill" class="ml-2" color="accent">
                                     <mat-label>Leeftijd (in jaren)</mat-label>
                                     <input matInput formControlName="age" required>
                                     <mat-error *ngIf="form.age.invalid">Vul een leeftijd in</mat-error>
                                 </mat-form-field>
                             </div>
                             <div class="col-md-6">
-                                <mat-form-field appearance="fill" class="ml-2">
+                                <mat-form-field appearance="fill" class="ml-2" color="accent">
                                     <mat-label>Lengte (in cm)</mat-label>
                                     <input matInput formControlName="length" required>
                                     <mat-error *ngIf="form.length.invalid">Vul een lengte in</mat-error>
                                 </mat-form-field>
-                                <mat-form-field appearance="fill" class="ml-2">
+                                <mat-form-field appearance="fill" class="ml-2" color="accent">
                                     <mat-label>Gewicht (in kg)</mat-label>
                                     <input matInput formControlName="weight" required>
                                     <mat-error *ngIf="form.weight.invalid">Vul een gewicht in</mat-error>
@@ -168,8 +169,8 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <button [disabled]="bmiGroup.invalid" mat-raised-button type="submit" class="float-right"
-                                    (click)="onSubmit()">Bevestig</button>
+                                <button [disabled]="bmiGroup.invalid" mat-raised-button type="submit"
+                                    class="float-right" (click)="onSubmit()">Bevestig</button>
                             </div>
                         </div>
                     </form>
