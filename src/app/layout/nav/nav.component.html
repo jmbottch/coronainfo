@@ -1,0 +1,39 @@
+<mat-toolbar color="warn" class="app-toolbar">
+
+    <mat-icon>health_and_safety</mat-icon>
+    <span routerLink="/home">CoronaInfo</span>
+
+    <div class="vl"></div>
+    <button mat-button class="default" routerLink="/algemeen">Algemeen</button>
+    <button mat-button class="default" routerLink="/regels">Regels</button>
+    <button mat-button class="default" routerLink="/vaccinaties">Vaccinaties</button>
+
+    <span class="example-spacer"></span>
+
+    <button mat-button class="default" routerLink="/wat-te-doen">Wat kan ik doen?</button>
+
+    <!-- Mobile Menu -->
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu-icon" class="mobile">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/algemeen">
+            <mat-icon>info</mat-icon>
+            <span>Algemeen</span>
+        </button>
+        <button mat-menu-item routerLink="/regels">
+            <mat-icon>gavel</mat-icon>
+            <span>Regels</span>
+        </button>
+        <button mat-menu-item routerLink="/vaccinaties">
+            <mat-icon>healing</mat-icon>
+            <span>Vaccinaties</span>
+        </button>
+        <button mat-menu-item routerLink="/wat-te-doen">
+            <mat-icon>
+                health_and_safety
+            </mat-icon>
+            <span>Wat kan ik doen?</span>
+        </button>
+    </mat-menu>
+</mat-toolbar>

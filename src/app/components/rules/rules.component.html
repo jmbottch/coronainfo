@@ -1,0 +1,133 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <mat-card class="rule-general-card">
+                <mat-card-header>
+                    <img mat-card-avatar src="https://static.thenounproject.com/png/2560148-200.png" alt="rules-icon" />
+                    <mat-card-title>Algemene regels</mat-card-title>
+                    <mat-card-subtitle>Die voor iedereen gelden.</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <hr />
+                    <p>
+                        <strong>
+                            In Nederland zijn een aantal maatregelen opgesteld om verspreiding van het coronavirus tegen
+                            te gaan.
+                        </strong>
+                    </p>
+                    <p>Er zijn regels die voor iedereen gelden, en er zijn een aantal uitzonderingen</p>
+                    <p>Regels die voor iedereen gelden:</p>
+                    <ul class="rules">
+                        <li *ngFor="let rule of rules">
+                            {{rule}}
+                        </li>
+                    </ul>
+                    <hr />
+                </mat-card-content>
+                <mat-card-footer>
+                    <p class="ml-3">Bron en meer info:
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels"
+                            target="blank">Rijskoverheid</a>
+                    </p>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-6">
+            <mat-card class="test-card">
+                <mat-card-header>
+                    <img mat-card-avatar src="https://image.flaticon.com/icons/png/512/2800/2800348.png"
+                        alt="test-icon" />
+                    <mat-card-title>Testen</mat-card-title>
+                    <mat-card-subtitle>en thuisblijven bij klachten</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <hr />
+                    <p>
+                        <strong>Iedereen met klachten die passen bij corona blijft thuis en laat zich testen op het
+                            coronavirus. Dat geld ook voor kinderen. </strong> <br />
+                        Kinderen tot 4 jaar mogen eventueel naar de opvang als
+                        zij verkoudheidsklachten hebben.
+                    </p>
+                    <p>
+                        In de volgende gevallen kunt u ook zonder klachten getest worden:
+                    </p>
+                    <ul>
+                        <li>
+                            Uw naam komt naar voren uit bron- en contactonderzoek omdat u nauw contact had met een
+                            besmet persoon.
+                        </li>
+                        <li>
+                            U krijgt een melding in de CoronaMelder app omdat u in contact was met iemand die besmet
+                            was.
+                        </li>
+                        <li>
+                            U bent in het buitenland geweest.
+                        </li>
+                    </ul>
+                    In al deze gevallen gaat u 10 dagen in quarantaine, maar kunt u na 5 dagen getest worden. Is de test
+                    negatief? Dan hoeft u niet meer in quarantaine te blijven. Krijgt u klachten? wacht dan niet met
+                    testen tot dag 5!
+                    <p> lees meer over
+                    </p>
+                    <ul>
+                        <li>
+                            <a mat-raised-button class="ml-2"
+                                href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/testen">Testen</a>
+                        </li>
+                        <li>
+                            <a mat-raised-button class="ml-2"
+                                href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/thuisquarantaine">Quarantaine
+                                regels</a>
+                        </li>
+                    </ul>
+                    <hr />
+                </mat-card-content>
+                <mat-card-footer>
+                    <p class="ml-3">Bron en meer info:
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels"
+                            target="blank">Rijskoverheid</a>
+                    </p>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+        <div class="col-md-6">
+            <mat-card class="exceptions-card">
+                <mat-card-header>
+                    <img mat-card-avatar src="https://static.thenounproject.com/png/2606562-200.png" alt="exeption-icon"/>
+                    <mat-card-title>Uitzonderingen</mat-card-title>
+                    <mat-card-subtitle>Tot nu toe alleen voor kinderen.</mat-card-subtitle>                    
+                </mat-card-header>
+                <mat-card-content>
+                    <hr/>
+                    <p>
+                        <strong>
+                            Er zijn een aantal uitzonderingen
+                        </strong>
+                        <br/>
+                        Die tot nu toe alleen voor kinderen gelden.
+                    </p>
+                    <ul>
+                        <li>
+                            Kinderen tot en met 12 jaar hoeven geen 1,5 meter afstand te houden tot elkaar en tot volwassenen te houden. Alle andere hygienemaatregelen gelden ook voor kinderen.
+                        </li>
+                        <li>
+                            Jongeren van 13 tot en met 17 hoeven onderling geen 1,5 meter afstand te houden. Dus wel tot volwassenen.
+                        </li>
+                    </ul>
+                    <hr/>
+                </mat-card-content>
+                <mat-card-footer>
+                    <p class="ml-3">Bron en meer info:
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels"
+                            target="blank">Rijskoverheid</a>
+                    </p>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+    </div>
+</div>
