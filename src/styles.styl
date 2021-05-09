@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+//example-spacer zorgt ervoor dat een deel van de knoppen links, en een deel van de knoppen rechts op de toolbar staan.
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -7,7 +7,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
+//achtergrond, en instellingen van de body van de website
 body {
     min-height: 100vh;
     display: flex;
@@ -18,17 +18,4 @@ body {
     background-size: cover;
 }
 
-.app-toolbar {
-    position: fixed;
-    position: -webkit-sticky; /* For macOS/iOS Safari */
-    top: 0; /* Sets the sticky toolbar to be on top */
-    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
-    opacity: 0.9;
-}
-.footer {
-    position: sticky;
-    position: -webkit-sticky; /* For macOS/iOS Safari */
-    bottom: 0; /* Sets the sticky toolbar to be on bottom */
-    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
-    opacity: 0.9;
-}
+

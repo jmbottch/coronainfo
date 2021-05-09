@@ -3,11 +3,13 @@
         <div class="col-md-12 mt-1">
             <mat-card class="rule-general-card">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://static.thenounproject.com/png/2560148-200.png" alt="rules-icon" />
                     <mat-card-title>Algemene regels</mat-card-title>
                     <mat-card-subtitle>Die voor iedereen gelden.</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr />
                     <p>
                         <strong>
@@ -17,6 +19,7 @@
                     </p>
                     <p>Er zijn regels die voor iedereen gelden, en er zijn een aantal uitzonderingen</p>
                     <p>Regels die voor iedereen gelden:</p>
+                    <!-- hieronder wordt een lijst van regels weergegeven -->
                     <ul class="rules">
                         <li *ngFor="let rule of rules">
                             {{rule}}
@@ -25,6 +28,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels"
@@ -38,12 +42,14 @@
         <div class="col-md-6 mt-1">
             <mat-card class="test-card">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://image.flaticon.com/icons/png/512/2800/2800348.png"
                         alt="test-icon" />
                     <mat-card-title>Testen</mat-card-title>
                     <mat-card-subtitle>en thuisblijven bij klachten</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr />
                     <p>
                         <strong>Iedereen met klachten die passen bij corona blijft thuis en laat zich testen op het
@@ -86,6 +92,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels"
@@ -97,11 +104,13 @@
         <div class="col-md-6 mt-1">
             <mat-card class="exceptions-card">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://static.thenounproject.com/png/2606562-200.png" alt="exeption-icon"/>
                     <mat-card-title>Uitzonderingen</mat-card-title>
                     <mat-card-subtitle>Tot nu toe alleen voor kinderen.</mat-card-subtitle>                    
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr/>
                     <p>
                         <strong>
@@ -121,6 +130,7 @@
                     <hr/>
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels"

@@ -3,12 +3,14 @@
         <div class="col-md-7 mt-1">
             <mat-card class="info-card top-row">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/9867768081535351488-512.png"
                         alt="information-icon" />
                     <mat-card-title routerLink="/algemeen">Algemene informatie</mat-card-title>
                     <mat-card-subtitle>Over het coronavirus in Nederland.</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr />
                     <p>
                         <strong>
@@ -19,8 +21,7 @@
 
                     <p>
                         Het kabinet heeft echter besloten om al versoepelingen in de regels door te voeren.
-                    </p>
-
+                    </p>                    
                     <ul>
                         <li>De Avondklok is afgeschaft per 28 April 2021</li>
                         <li>Er mogen nu twee mensen op bezoek komen i.p.v één</li>
@@ -37,6 +38,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19"
@@ -49,6 +51,7 @@
         <div class="col-md-5 mt-1">
             <mat-card class="regels-card top-row">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://static.thenounproject.com/png/550432-200.png" alt="rules" />
                     <mat-card-title>Algemene regels</mat-card-title>
                     <mat-card-subtitle>
@@ -57,6 +60,7 @@
                 </mat-card-header>
                 <mat-card-content class="pb-2">
                     <hr />
+                    <!-- hieronder wordt een lijst met regels weergegeven, vanuit het typescript bestand -->
                     <p><strong>De basisregels:</strong></p>
                     <ul class="rules">
                         <li *ngFor="let rule of rules">
@@ -68,6 +72,7 @@
                     </p>
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <hr />
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
@@ -82,11 +87,13 @@
         <div class="col-md-6 mt-1">
             <mat-card class="vaccine-card bot-row">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
                         alt="vaccine-icon">
                     <mat-card-title routerLink="/vaccinaties">Vaccinaties</mat-card-title>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr />
                     <p>
                         <strong>
@@ -108,6 +115,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie"
@@ -119,11 +127,13 @@
         <div class="col-md-6 mt-1">
             <mat-card class="testen-card bot-row">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://image.flaticon.com/icons/png/512/2800/2800348.png"
                         alt="test-icon" />
                     <mat-card-title>Testen</mat-card-title>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr />
                     <p>
                         <strong>
@@ -147,6 +157,7 @@
 
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <hr />
                     <p class="ml-3">Bronnen en meer info: <br />
                         <a mat-raised-button class="ml-2"

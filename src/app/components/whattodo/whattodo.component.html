@@ -3,12 +3,14 @@
         <div class="col-md-12 mt-1">
             <mat-card class="virus-card">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://cdn3.iconfinder.com/data/icons/essentials-7/16/alert-01-512.png"
                         alt="uitroepteken-icon" />
                     <mat-card-title>Adviezen virus niet krijgen.</mat-card-title>
                     <mat-card-subtitle>Tips om te voorkomen dat u een virus krijgt of verspreidt.</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr />
                     <ul>
                         <li><span class="text-danger">Belangrijk:</span> U kunt veilig naar uw (huis)arts. Uw
@@ -55,6 +57,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bronnen en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.thuisarts.nl/corona/ik-wil-voorkomen-dat-ik-corona-krijg#hoe-voorkom-ik-dat-ik-het-coronavirus-krijg"
@@ -71,11 +74,13 @@
         <div class="col-md-12  mt-1">
             <mat-card class="health-card">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://static.thenounproject.com/png/39490-200.png" alt="healthy-icon" />
                     <mat-card-title>Adviezen gezond leven</mat-card-title>
                     <mat-card-subtitle>Het is belangrijk dat uw weerstand goed werkt.</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr />
                     <p>
                         <strong>Met een goed werkende weerstand, heeft u minderkans om ernstig ziek te worden als u het
@@ -103,6 +108,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bronnen en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.thuisarts.nl/corona/ik-wil-voorkomen-dat-ik-corona-krijg#adviezen-om-uw-lichaam-sterker-te-maken"
@@ -118,13 +124,16 @@
     <div class="row">
         <div class="col-md-12  mt-1">
             <mat-card class="BMI-card">
+                <!-- deze kaart is de BMI calculator -->
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://i.pinimg.com/originals/13/e7/a5/13e7a54a92c6258020b2c4130f5c0b4a.png"
                         alt="bmi-icon" />
                     <mat-card-title>BMI calculator</mat-card-title>
                     <mat-card-subtitle>creëer een beeld.</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr />
                     <p>
                         <strong>Hier kunt u een beeld krijgen hoe u er voor staat.</strong>
@@ -136,7 +145,8 @@
                     <p>
                         Vul uw geslacht, gewicht, leeftijd en lengte in om uw BMI te berekenen.
                     </p>
-
+                    <!-- hieronder staat een form, waar gegevens ingevuld kunnen worden, alleen als het formulier juist is ingevuld kan er op bevestig worden gedrukt.
+                         hierna wordt de berekening uitgevoerd die in het typescript bestand staat -->
                     <form [formGroup]="bmiGroup" (ngSumbit)="onSubmit()" *ngIf="!submitted">
                         <div class="row">
                             <div class="col-md-6">
@@ -174,6 +184,7 @@
                             </div>
                         </div>
                     </form>
+                    <!-- de uitkomst van de berekening wordt hieronder weergegeven. -->
                     <div *ngIf="submitted">
                         <strong>Uw BMI is {{foundBMI}}, dit betekent dat u zich in de categorie {{state}}
                             bevindt.</strong>
@@ -182,6 +193,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bronnen en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.thuisarts.nl/corona/ik-wil-voorkomen-dat-ik-corona-krijg#adviezen-om-uw-lichaam-sterker-te-maken"

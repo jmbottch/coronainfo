@@ -3,6 +3,9 @@
     <mat-icon>health_and_safety</mat-icon>
     <span routerLink="/home" (click)="setActiveItem('home')" [ngStyle]="{'color' : activeItem === 'home' ? '#272b2e' : 'whitesmoke'}">CoronaInfo</span>
 
+    <!-- hieronder het normale menu 
+     de (click) en [ngSyle] worden gebruikt om de 
+        kleur van de knoppen aan te passen, op bassis van waar de gebruiker zich op de website bevindt -->
     <div class="vl"></div>
     <button mat-button class="default" routerLink="/algemeen" (click)="setActiveItem('algemeen')" [ngStyle]="{'color' : activeItem === 'algemeen' ? '#272b2e' : 'whitesmoke'}">Algemeen</button>
     <button mat-button class="default" routerLink="/regels" (click)="setActiveItem('regels')" [ngStyle]="{'color' : activeItem === 'regels' ? '#272b2e' : 'whitesmoke'}">Regels</button>
@@ -13,7 +16,9 @@
 
     <button mat-button class="default" routerLink="/wat-te-doen" (click)="setActiveItem('watdoen')" [ngStyle]="{'color' : activeItem === 'watdoen' ? '#272b2e' : 'whitesmoke'}">Wat kan ik doen?</button>
 
-    <!-- Mobile Menu -->
+    <!-- Mobile Menu 
+    De (click) en [ngSyle] worden gebruikt om de 
+        kleur van de knoppen aan te passen, op bassis van waar de gebruiker zich op de website bevindt -->
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu-icon" class="mobile">
         <mat-icon>more_vert</mat-icon>
     </button>

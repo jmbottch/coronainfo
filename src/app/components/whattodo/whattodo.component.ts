@@ -26,17 +26,18 @@ export class WhattodoComponent implements OnInit {
   }
 
   onSubmit() {
-    //divide length with 100, to make it meters
+    //deel length door 100, om het meters te maken
     var temp = this.bmiGroup.value.length / 100
-    //square the outcome
+    //uitkomst in het kwadraat
     var denum = temp * temp;
-    //divide weigth with squared length in m
+    //deel gewicht door lengte in het kwadraat
     var bmi = this.bmiGroup.value.weight / denum;
-    //set submitted true
+    //zet variabele boolean submitted op true (geen deel van de berekening, maar een herkenning voor de pagina)
     this.submitted = true;
-    //round number
+    //rond het getal af
     var rounded = Math.round(bmi * 10) / 10
 
+    //bepaal in welke categorie de gebruiker zit
     if(rounded < 18.5 ) {
       this.state = "ondergewicht"
     }
@@ -50,9 +51,11 @@ export class WhattodoComponent implements OnInit {
       this.state = "Ernstig overgewicht (obesitas)"
     }
 
-    //set foundbmi
+    //zet het gevonden bmi in de variabele die gebruikt kan worden door de pagina
     this.foundBMI = rounded;
   }
+
+  //hieronder volgt form validation, er wordt gecheckt of er iets is ingevuld, zo niet komt er een foutmelding.
   get form() {
     return this.bmiGroup.controls;
   }

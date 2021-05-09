@@ -3,12 +3,15 @@
         <div class="col-md-12 mt-1">
             <mat-card class="general-card">
                 <mat-card-header>
+                    <!-- card header -->                    
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/9867768081535351488-512.png"
                         alt="information-icon" />
                     <mat-card-title>Algemene informatie</mat-card-title>
                     <mat-card-subtitle>Over de vaccins.</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
+                    
                     <hr />
                     <p>
                         <strong>Er zijn inmiddels zes Corona vaccins, waarvan er vier geauthoriseerd en aanbevolen
@@ -91,6 +94,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins"
@@ -113,13 +117,16 @@
     <div class="row mt-1">
         <div class="col-md-12">
             <mat-card>
+                <!-- in dit vak kan er gekozen worden tussen de vaccins, om meer informatie op te vragen -->
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
                         alt="vaccine-icon">
                     <mat-card-title>Vaccins</mat-card-title>
                     <mat-card-subtitle>Meer info</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <form [formGroup]="selectedForm">
                         <div class="row">
                             <div class="col-md-8">
@@ -151,16 +158,19 @@
 
         </div>
     </div>
+    <!-- Vanaf hier volgen de vakken met meer informatie over de vaccins. -->
     <div class="row">
         <div *ngIf="selected == 'pfizer'" class="col-md-12 mt-1">
             <mat-card class="infections-card">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
                         alt="vaccine-icon">
                     <mat-card-title>Pfizer-BioNTech</mat-card-title>
                     <mat-card-subtitle>Iets dieper.</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
+                    <!-- card content -->
                     <hr />
                     <p>
                         <strong>
@@ -216,6 +226,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/biontech-pfizer-comirnaty"
@@ -227,6 +238,7 @@
         <div *ngIf="selected == 'moderna'" class="col-md-12 mt-1">
             <mat-card class="risk-card">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
                         alt="vaccine-icon">
                     <mat-card-title>
@@ -276,6 +288,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/moderna"
@@ -287,6 +300,7 @@
         <div *ngIf="selected == 'astrazeneca'" class="col-md-12 mt-1">
             <mat-card class="risk-card">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
                         alt="vaccine-icon">
                     <mat-card-title>
@@ -355,6 +369,7 @@
 
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/astrazeneca"
@@ -369,6 +384,7 @@
         <div *ngIf="selected == 'janssen'" class="col-md-12 mt-1">
             <mat-card class="risk-card">
                 <mat-card-header>
+                    <!-- card header -->
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
                         alt="vaccine-icon">
                     <mat-card-title>
@@ -414,6 +430,7 @@
                     <hr />
                 </mat-card-content>
                 <mat-card-footer>
+                    <!-- card footer -->
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/janssen"

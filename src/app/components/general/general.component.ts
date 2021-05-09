@@ -11,7 +11,8 @@ export class GeneralComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  // lijst van risicogroepen.  
   groups: string[] = [
     "Mensen met chronische luchtweg- of longproblemen die  onder behandeling van een longarts zijn.",
     "Chronische hartpatiënten die daardoor in aanmerking komen voor een griepprik",

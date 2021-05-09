@@ -11,6 +11,9 @@ export class RulesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  // lijst van regels
+  
   rules: string[] = [
     "Blijf zo veel mogelijk thuis",
     "Werk zo veel mogelijk thuis",

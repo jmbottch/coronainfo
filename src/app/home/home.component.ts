@@ -9,6 +9,8 @@ import { GeneralComponent } from '../components/general/general.component';
 export class HomeComponent implements OnInit {
 
   constructor() { }
+
+  //lijst met regels
   rules: string[] = [
     "Blijf zo veel mogelijk thuis",
     "Werk zo veel mogelijk thuis",
