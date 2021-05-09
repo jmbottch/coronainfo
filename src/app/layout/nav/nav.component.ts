@@ -9,7 +9,13 @@ export class NavComponent implements OnInit {
 
   constructor() { }
 
+  activeItem : string;
+
   ngOnInit(): void {
+  }
+
+  setActiveItem(page: string) {
+    this.activeItem = page;
   }
 
 }

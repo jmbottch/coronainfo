@@ -55,6 +55,8 @@ import { RulesComponent } from './components/rules/rules.component';
 import { VaccinesComponent } from './components/vaccines/vaccines.component';
 import { WhattodoComponent } from './components/whattodo/whattodo.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TestComponent } from './components/test/test.component';
+import { NotFoundComponent } from './layout/not-found/not-found.component';
 
 
 @NgModule({
@@ -67,6 +69,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RulesComponent,
     VaccinesComponent,
     WhattodoComponent,
+    TestComponent,
+    NotFoundComponent,
     
   ],
   imports: [
@@ -117,7 +121,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatTreeModule,
     OverlayModule,
     PortalModule,
-    ScrollingModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

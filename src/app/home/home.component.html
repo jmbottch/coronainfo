@@ -1,91 +1,96 @@
 <div class="container">
     <div class="row ">
         <div class="col-md-7 mt-1">
-            <mat-card class="info-card">
-                <mat-card-header>    
-                    <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/9867768081535351488-512.png" alt="information-icon"/>                
+            <mat-card class="info-card top-row">
+                <mat-card-header>
+                    <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/9867768081535351488-512.png"
+                        alt="information-icon" />
                     <mat-card-title routerLink="/algemeen">Algemene informatie</mat-card-title>
                     <mat-card-subtitle>Over het coronavirus in Nederland.</mat-card-subtitle>
                 </mat-card-header>
-                <mat-card-content class="pb-2">
-                    <hr/>
+                <mat-card-content>
+                    <hr />
                     <p>
                         <strong>
-                            Terwijl het aantal besmetting afneemt en het ook iets minder druk wordt in de ziekenhuizen,
-                            winnen nieuwe varianten van het Coronavirus snel terrein.
+                            Terwijl besmettingen weer toenemen, moeten ziekenhuizen reguliere zorg afzeggen om het tempo
+                            van het coronavirus bij te kunnen benen.
                         </strong>
                     </p>
 
                     <p>
-                        Dat is zorgelijk, want die varianten
-                        zijn besmettelijker dus kunnen leiden tot een nieuwe golf besmettingen. Nu is het belangrijk om
-                        zo veel mogelijk nieuwe besmettingen tegen te gaan en te voorkomen, zodat de ziekenhuizen de
-                        komende tijd ruimte hebben voor zowel corona patiënten als patiënten die reguliere zorg nodig
-                        hebben.
+                        Het kabinet heeft echter besloten om al versoepelingen in de regels door te voeren.
                     </p>
 
+                    <ul>
+                        <li>De Avondklok is afgeschaft per 28 April 2021</li>
+                        <li>Er mogen nu twee mensen op bezoek komen i.p.v één</li>
+                        <li>Onderwijs mag op locatie, met inachtneming van de 1.5 afstand.</li>
+                        <li>Terassen mogen open van 12:00u tot 18:00u</li>
+                        <li>Er mag weer zonder afspraak gewinkeld worden.</li>
+                        <li>Theorie examens zijn weer mogelijk (voor voertuigen)</li>
+                        <li>Aantal gasten bij uitvaart is verhoogd van 50 naar 100</li>
+                    </ul>
                     <p>
-                        <strong class="text-danger">De huidige lockdown blijft daarom van kracht.</strong>
+                        Voor meer informatie over de versoepelingen, klik <a
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/openingsplan/stap-1-openingsplan">hier</a>
                     </p>
-                    <p>
-                        De basisscholen en kinderopvang zijn wel weer open.
-                        Daarnaast mogen consumenten bestelling op afspraak ophalen bij de winkel.                        
-                    </p>                    
-                    <hr/>
+                    <hr />
                 </mat-card-content>
                 <mat-card-footer>
                     <p class="ml-3">Bron en meer info:
-                    <a mat-raised-button class="ml-2"
-                        href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19" target="blank">Rijskoverheid</a>
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19"
+                            target="blank">Rijskoverheid</a>
                     </p>
                 </mat-card-footer>
 
-            </mat-card>           
+            </mat-card>
         </div>
         <div class="col-md-5 mt-1">
-                     <mat-card class="regels-card">
-                         <mat-card-header>
-                             <img mat-card-avatar src="https://static.thenounproject.com/png/550432-200.png" alt="rules"/>
-                             <mat-card-title>Algemene regels</mat-card-title>
-                            <mat-card-subtitle>
-                                Die voor iedereen gelden.
-                            </mat-card-subtitle>
-                         </mat-card-header>
-                         <mat-card-content>
-                             <hr/>
-                                <p><strong>De basisregels:</strong></p>
-                                <ul class="rules">
-                                    <li *ngFor="let rule of rules">
-                                        {{rule}}
-                                    </li>
-                                </ul>
-                                <p>
-                                    Als we ons allemaal aan de regels houden, zijn we er sneller vanaf!
-                                </p>
-                             <hr/>
-                         </mat-card-content>
-                         <mat-card-footer>
-                            <p class="ml-3">Bron en meer info:
-                                <a mat-raised-button class="ml-2"
-                                    href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels" target="blank">Rijskoverheid</a>
-                                </p>
-                         </mat-card-footer>
-                     </mat-card>
+            <mat-card class="regels-card top-row">
+                <mat-card-header>
+                    <img mat-card-avatar src="https://static.thenounproject.com/png/550432-200.png" alt="rules" />
+                    <mat-card-title>Algemene regels</mat-card-title>
+                    <mat-card-subtitle>
+                        Die voor iedereen gelden.
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content class="pb-2">
+                    <hr />
+                    <p><strong>De basisregels:</strong></p>
+                    <ul class="rules">
+                        <li *ngFor="let rule of rules">
+                            {{rule}}
+                        </li>
+                    </ul>
+                    <p>
+                        Als we ons allemaal aan de regels houden, zijn we er sneller vanaf!
+                    </p>
+                </mat-card-content>
+                <mat-card-footer>
+                    <hr />
+                    <p class="ml-3">Bron en meer info:
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/algemene-coronaregels/basisregels"
+                            target="blank">Rijskoverheid</a>
+                    </p>
+                </mat-card-footer>
+            </mat-card>
         </div>
     </div>
-    <div class="row mt-2">
-        <div class="col-md-4">
-            <mat-card class="vaccine-card">
+    <div class="row">
+        <div class="col-md-6 mt-1">
+            <mat-card class="vaccine-card bot-row">
                 <mat-card-header>
-                    <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png" alt="vaccine-icon">
-                    <mat-card-title routerLink="/vaccinaties">Vaccinaties</mat-card-title>                    
-                </mat-card-header>                
+                    <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
+                        alt="vaccine-icon">
+                    <mat-card-title routerLink="/vaccinaties">Vaccinaties</mat-card-title>
+                </mat-card-header>
                 <mat-card-content>
-                    <hr/>
+                    <hr />
                     <p>
                         <strong>
-                            De eerste Nederlanders zijn inmiddels gevaccineerd tegen het coronavirus, en het aantal
-                            besmettingen daalt.
+                            Inmiddels hebben meer dan een miljoen Nederlanders de vollidge corona vaccinatie doorstaan.
                         </strong>
                     </p>
                     <p>Dit betekent niet dat we maatregelen los kunnen laten. De meeste mensen zijn namelijk nog vatbaar
@@ -95,17 +100,63 @@
                         De Eerste nederlander werdt gevaccineerd op 6 Januari 2021.
                     </p>
                     <p>
-                        Voor de opslag van vaccins in Nederland zorgt een farmaceutisch logistiek dienstverlener. Deze partij heeft kennis en ervaring in het vervoer van vaccins. Er is opslagruimte voor alle coronavaccins. Daarbij is rekening gehouden met de verschillende temperaturen voor opslag van vaccins.
+                        Voor de opslag van vaccins in Nederland zorgt een farmaceutisch logistiek dienstverlener. Deze
+                        partij heeft kennis en ervaring in het vervoer van vaccins. Er is opslagruimte voor alle
+                        coronavaccins. Daarbij is rekening gehouden met de verschillende temperaturen voor opslag van
+                        vaccins.
                     </p>
-                    <hr/>
+                    <hr />
                 </mat-card-content>
                 <mat-card-footer>
                     <p class="ml-3">Bron en meer info:
-                    <a mat-raised-button class="ml-2"
-                        href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie" target="blank">Rijskoverheid</a>
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie"
+                            target="blank">Rijskoverheid</a>
                     </p>
                 </mat-card-footer>
-            </mat-card>   
+            </mat-card>
         </div>
+        <div class="col-md-6 mt-1">
+            <mat-card class="testen-card bot-row">
+                <mat-card-header>
+                    <img mat-card-avatar src="https://image.flaticon.com/icons/png/512/2800/2800348.png"
+                        alt="test-icon" />
+                    <mat-card-title>Testen</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <hr />
+                    <p>
+                        <strong>
+                            Iedereen met klachten kan zich laten testen op het coronavirus.
+                        </strong>
+                        <br />
+                        Mensen die risico gelopen hebben op een besmetting kunnen zich ook zonder klachten laten testen.
+                    </p>
+                    <p>
+                        Testen op het coronavirus is belangrijk om te weten of u op dit moment besmet bent met het
+                        coronavirus. Zo kunt u besmetting van de mensen om u heenvoorkomen.
+                    </p>
+                    <p>
+                        Het snel testen en voorkomen
+                        van verspreiding is belangrijk nu de maatregelen versoepeld worden.
+                    </p>
+                    <p>
+                        Test afspraken kunt u maken via <a href="https://coronatest.nl/"
+                            target="blank">Coronatest.nl</a>
+                    </p>
+
+                </mat-card-content>
+                <mat-card-footer>
+                    <hr />
+                    <p class="ml-3">Bronnen en meer info: <br />
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/testen"
+                            target="blank">Rijskoverheid</a>
+                        <a mat-raised-button class="ml-2" href="https://www.ggd.amsterdam.nl/coronavirus/testen-corona/"
+                            target="blank">GGD Amsterdam</a>
+                    </p>
+                </mat-card-footer>
+            </mat-card>
+        </div>        
     </div>
 </div>

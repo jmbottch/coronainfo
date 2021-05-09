@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-vaccines',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VaccinesComponent implements OnInit {
 
-  constructor() { }
+  selectedForm!: FormGroup;
+  selected!: any
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    this.selectedForm = this.fb.group({
+      selected: []
+    })
   }
+
+  onSelect() {
+    this.selected = this.selectedForm.value.selected
+    console.log(this.selected)
+  }
+
+  
 
 }

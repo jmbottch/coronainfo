@@ -1,35 +1,42 @@
 <mat-toolbar color="warn" class="app-toolbar">
 
     <mat-icon>health_and_safety</mat-icon>
-    <span routerLink="/home">CoronaInfo</span>
+    <span routerLink="/home" (click)="setActiveItem('home')" [ngStyle]="{'color' : activeItem === 'home' ? '#272b2e' : 'whitesmoke'}">CoronaInfo</span>
 
     <div class="vl"></div>
-    <button mat-button class="default" routerLink="/algemeen">Algemeen</button>
-    <button mat-button class="default" routerLink="/regels">Regels</button>
-    <button mat-button class="default" routerLink="/vaccinaties">Vaccinaties</button>
+    <button mat-button class="default" routerLink="/algemeen" (click)="setActiveItem('algemeen')" [ngStyle]="{'color' : activeItem === 'algemeen' ? '#272b2e' : 'whitesmoke'}">Algemeen</button>
+    <button mat-button class="default" routerLink="/regels" (click)="setActiveItem('regels')" [ngStyle]="{'color' : activeItem === 'regels' ? '#272b2e' : 'whitesmoke'}">Regels</button>
+    <button mat-button class="default" routerLink="/vaccinaties" (click)="setActiveItem('vaccinaties')" [ngStyle]="{'color' : activeItem === 'vaccinaties' ? '#272b2e' : 'whitesmoke'}">Vaccinaties</button>
+    <button mat-button class="default" routerLink="/testen" (click)="setActiveItem('testen')" [ngStyle]="{'color' : activeItem === 'testen' ? '#272b2e' : 'whitesmoke'}">Testen</button>
 
     <span class="example-spacer"></span>
 
-    <button mat-button class="default" routerLink="/wat-te-doen">Wat kan ik doen?</button>
+    <button mat-button class="default" routerLink="/wat-te-doen" (click)="setActiveItem('watdoen')" [ngStyle]="{'color' : activeItem === 'watdoen' ? '#272b2e' : 'whitesmoke'}">Wat kan ik doen?</button>
 
     <!-- Mobile Menu -->
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu-icon" class="mobile">
         <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-        <button mat-menu-item routerLink="/algemeen">
+        <button mat-menu-item (click)="setActiveItem('algemeen')"  [ngStyle]="{'color' : activeItem === 'algemeen' ? '#e04035' : 'whitesmoke'}" routerLink="/algemeen">
             <mat-icon>info</mat-icon>
             <span>Algemeen</span>
         </button>
-        <button mat-menu-item routerLink="/regels">
+        <button mat-menu-item (click)="setActiveItem('regels')"  [ngStyle]="{'color' : activeItem === 'regels' ? '#e04035' : 'whitesmoke'}" routerLink="/regels">
             <mat-icon>gavel</mat-icon>
             <span>Regels</span>
         </button>
-        <button mat-menu-item routerLink="/vaccinaties">
+        <button mat-menu-item (click)="setActiveItem('vaccinaties')"  [ngStyle]="{'color' : activeItem === 'vaccinaties' ? '#e04035' : 'whitesmoke'}"routerLink="/vaccinaties">
             <mat-icon>healing</mat-icon>
             <span>Vaccinaties</span>
         </button>
-        <button mat-menu-item routerLink="/wat-te-doen">
+        <button mat-menu-item (click)="setActiveItem('testen')"  [ngStyle]="{'color' : activeItem === 'testen' ? '#e04035' : 'whitesmoke'}"routerLink="/testen">
+            <mat-icon>
+                medical_services
+            </mat-icon>
+            <span>Testen</span>
+        </button>
+        <button mat-menu-item (click)="setActiveItem('watdoen')"  [ngStyle]="{'color' : activeItem === 'watdoen' ? '#e04035' : 'whitesmoke'}" routerLink="/wat-te-doen">
             <mat-icon>
                 health_and_safety
             </mat-icon>

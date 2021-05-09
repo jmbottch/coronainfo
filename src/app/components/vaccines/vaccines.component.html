@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 mt-1">
             <mat-card class="general-card">
                 <mat-card-header>
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/9867768081535351488-512.png"
@@ -11,28 +11,44 @@
                 <mat-card-content>
                     <hr />
                     <p>
-                        <strong>Er zijn inmiddels zes Corona vaccins, waarvan er twee geauthoriseerd en aanbevolen
+                        <strong>Er zijn inmiddels zes Corona vaccins, waarvan er vier geauthoriseerd en aanbevolen
                             zijn.</strong>
                     </p>
                     <ul>
-                        <li>
-                            <a mat-raised-button class="ml-2"
-                                href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/biontech-pfizer-comirnaty">Pfizer-BioNTech</a>
-                        </li>
-                        <li>
-                            <a mat-raised-button class="ml-2"
-                                href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/moderna">Moderna
-                            </a>
-                        </li>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <li>
+                                    <a mat-raised-button class="ml-2 mt-1"
+                                        href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/biontech-pfizer-comirnaty">Pfizer-BioNTech</a>
+                                </li>
+                                <li>
+                                    <a mat-raised-button class="ml-2 mt-1"
+                                        href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/moderna">Moderna
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col-md-3">
+                                <li>
+                                    <a mat-raised-button class="ml-2 mt-1"
+                                        href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/astrazeneca">AstraZeneca</a>
+                                </li>
+                                <li>
+                                    <a mat-raised-button class="ml-2 mt-1"
+                                        href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/janssen">Janssen
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
                     </ul>
                     <p>
                         Bovenstaande vaccins zijn op tienduizenden mensen getest en beoordeeld op werkzaamheid,
                         veligheid en kwaliteit door het Europees Geneesmiddelen Agentschap (EMA) en het College ter
                         Beoordeling van Geneesmiddelen (CBG) <br />
-                        Het Pfizer-BioNTech beschermt in 95% van de gevallen tegen het coronavirus, <br />
-                        Het Moderna vaccins beschermt in 94% van de gevallen.
-                        <br/>
-                        <strong>Beide vaccins zijn goedgekeurd voor ouderen en mensen in risicogroepen, zoals mensen
+                        , <br />
+                        <br />
+
+                        <br />
+                        <strong>Alle vaccins zijn goedgekeurd voor ouderen en mensen in risicogroepen, zoals mensen
                             met:</strong>
 
                     </p>
@@ -47,11 +63,26 @@
                     <mat-card-subtitle>
                         mRNA- vaccins
                     </mat-card-subtitle>
-                    <p>Beide goedgekeurde vaccins zijn mRNA-vaccins. Het vaccin bevat een stukje genetische informatie:
+                    <p> Het Pfizer en Moderna vaccin zijn mRNA-vaccins. Het vaccin bevat een stukje genetische
+                        informatie:
                         het mRNA. mRNA zorgt voor het aanmaken van een kenmerkend eiwit van het coronavirus: het
                         spike-eiwit. Stukjes van dit eiwit worden herkend door afweercellen in het lichaam. Als reactie
                         hierop maakt het lichaam antistoffen aan. Komt u daarna in contact met het coronavirus? Dan
                         beschermen die antistoffen het lichaam. Zo is de kans klein dat u ziek wordt van het virus
+                    </p>
+                    <p>
+                        de mRNA-vaccins kunnen niet bij het DNA komen, en dus nooit iets veranderen aan uw genen. Het
+                        lichaam breekt het vaccin daarna vanzelf af.
+                    </p>
+
+                    <mat-card-subtitle>
+                        Vector vaccins
+                    </mat-card-subtitle>
+                    <p> Het coronavaccin van Janssen en het coronavaccin van AstraZeneca zijn zogenoemde vector-vaccins. Aan een bestaand, onschuldig
+                        verkoudheidsvirus (een adenovirus) wordt een klein stukje van de genetische code van het
+                        coronavirus toegevoegd. Op die manier gaat het afweersysteem aan de slag om antistoffen aan te
+                        maken tegen het spike-eiwit van het coronavirus. Komt het lichaam later nog eens in aanraking
+                        met het coronavirus? Dan wordt het virus herkend en maakt het lichaam meteen antistoffen aan.
                     </p>
                     <p>
                         de mRNA-vaccins kunnen niet bij het DNA komen, en dus nooit iets veranderen aan uw genen. Het
@@ -70,7 +101,8 @@
                         <a mat-raised-button class="ml-2"
                             href=" het https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/biontech-pfizer-comirnaty"
                             target="blank">Rijksoverheid - Pfizer-BioNTech</a>
-                        <a mat-raised-button class="ml-2" href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html"
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html"
                             target="blank">CDC.gov
                         </a>
                     </p>
@@ -78,8 +110,49 @@
             </mat-card>
         </div>
     </div>
-    <div class="row mt-2">
-        <div class="col-md-6">
+    <div class="row mt-1">
+        <div class="col-md-12">
+            <mat-card>
+                <mat-card-header>
+                    <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
+                        alt="vaccine-icon">
+                    <mat-card-title>Vaccins</mat-card-title>
+                    <mat-card-subtitle>Meer info</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <form [formGroup]="selectedForm">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <mat-form-field appearance="outline" class="ml-2 mb-2" style="width: 100% !important;">
+                                    <mat-label>Vaccin</mat-label>
+                                    <mat-select placeholder="Kies een vaccin voor meer informatie."
+                                        formControlName="selected" required>
+                                        <mat-option matInput [value]="'pfizer'">
+                                            Pfizer-BioNTech</mat-option>
+                                        <mat-option matInput [value]="'moderna'">
+                                            Moderna</mat-option>
+                                        <mat-option matInput [value]="'astrazeneca'">
+                                            AstraZeneca</mat-option>
+                                        <mat-option matInput [value]="'janssen'">
+                                            Janssen</mat-option>
+
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-md-4 child">
+                                <button mat-raised-button class="mt-3 selectbtn" style="height: 50px !important;"
+                                    class="text-left" (click)="onSelect()">Selecteer</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </mat-card-content>
+            </mat-card>
+
+        </div>
+    </div>
+    <div class="row">
+        <div *ngIf="selected == 'pfizer'" class="col-md-12 mt-1">
             <mat-card class="infections-card">
                 <mat-card-header>
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
@@ -93,6 +166,7 @@
                         <strong>
                             Het Pfizer-BioNTech vaccins voorkomt ziekte door het Coronavirus. In Nederland worden mensen
                             vanaf 18 jaar uitgenodigd voor inenting met dit vaccin.
+                            <br /> Het vaccin beschermt in 95% van de gevallen tegen het coronavirus.
                         </strong>
                     </p>
                     <p>
@@ -150,7 +224,7 @@
                 </mat-card-footer>
             </mat-card>
         </div>
-        <div class="col-md-6">
+        <div *ngIf="selected == 'moderna'" class="col-md-12 mt-1">
             <mat-card class="risk-card">
                 <mat-card-header>
                     <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
@@ -205,6 +279,144 @@
                     <p class="ml-3">Bron en meer info:
                         <a mat-raised-button class="ml-2"
                             href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/moderna"
+                            target="blank">Rijksoverheid</a>
+                    </p>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+        <div *ngIf="selected == 'astrazeneca'" class="col-md-12 mt-1">
+            <mat-card class="risk-card">
+                <mat-card-header>
+                    <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
+                        alt="vaccine-icon">
+                    <mat-card-title>
+                        AstraZeneca
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        Iets dieper.
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content class="pb-3">
+                    <hr />
+                    <p>
+                        <strong>
+                            Het AstraZeneca vaccin beschermt tegen de ziekte van het coronavirus, onderzoeken tonen aan
+                            dat het voor minimaal 60% beschermt.
+                        </strong>
+                    </p>
+                    <p>
+                        Direct na levering worden de vaccins in een medische koelkast geplaatst. De koelkast houdt de
+                        temperatuur constant tussen de 2°C en de 8°C.
+                    </p>
+                    <mat-card-subtitle>
+                        2 prikken nodig in 28 dagen
+                    </mat-card-subtitle>
+                    <p>
+                        Vaccinatie met het vaccin van Moderna bestaat uit 2 prikken. De 2e prik krijgt u minimaal 28
+                        dagen na de 1e prik. Vanaf 14 dagen na de 2e prik bent u maximaal beschermd tegen het
+                        coronavirus.
+                    </p>
+                    <mat-card-subtitle>
+                        Bijwerkingen
+                    </mat-card-subtitle>
+                    <p>De meest voorkomende bijwerkingen zijn:</p>
+                    <ul>
+                        <li>Pijn en zwelling op de prikplek</li>
+                        <li>Vermoeidheid en koude rillingen</li>
+                        <li>Koorts</li>
+                        <li>Hoofdpijn</li>
+                        <li>Spier- en gewrichtspijn</li>
+                    </ul>
+                    <p>Deze bijwerkingen zijn mild en verdwijnen meestal na een paar dagen. Het kan zijn dat er
+                        bijwerkingen optreden die ernstiger zijn. Maar de kans hierop is heel klein.</p>
+
+                    <p>Op 7 april 2021 heeft het geneesmiddelenbewakingscomité PRAC van het EMA de meldingen van
+                        stolselvorming in combinatie met een verlaagd aantal bloedplaatjes opnieuw onderzocht en
+                        beoordeeld. Op basis van alle gegevens is aannemelijk dat deze zeldzame aandoening veroorzaakt
+                        wordt door het vaccin. Eerder werd er al een waarschuwing geplaatst in de bijsluiter. Nu wordt
+                        deze zeldzame aandoening opgenomen als bijwerking in de bijsluiter. Het EMA benadrukt wel dat de
+                        voordelen van het vaccin nog steeds opwegen tegen de risico’s.</p>
+
+                    <p>
+                        Het is heel belangrijk dat zorgverleners en mensen die gevaccineerd zijn, letten op de volgende
+                        klachten. Deze passen bij de zeer zeldzame bijwerkingen van ernstige trombose met een laag
+                        aantal bloedplaatjes. Het is belangrijk om direct medische hulp in te schakelen als u deze
+                        klachten krijgt na vaccinatie met AstraZeneca:
+                    </p>
+                    <ul>
+                        <li>kortademigheid</li>
+                        <li>pijn op de borst of in de buik</li>
+                        <li>zwelling of kou in arm of been</li>
+                        <li>ernstige of verergerende hoofdpijn of wazig zicht</li>
+                        <li>aanhoudende bloeding</li>
+                        <li>meerdere kleine blauwe plekken, rode of paarse plekjes, of bloedblaren onder de huid.</li>
+                    </ul>
+                    <hr />
+
+                </mat-card-content>
+                <mat-card-footer>
+                    <p class="ml-3">Bron en meer info:
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/astrazeneca"
+                            target="blank">Rijksoverheid</a>
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.cbg-meb.nl/onderwerpen/medicijninformatie-vaccinaties/vraag-en-antwoord/coronavaccin-astrazeneca"
+                            target="blank">CBG</a>
+                    </p>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+        <div *ngIf="selected == 'janssen'" class="col-md-12 mt-1">
+            <mat-card class="risk-card">
+                <mat-card-header>
+                    <img mat-card-avatar src="https://pics.freeicons.io/uploads/icons/png/4660030321586786103-64.png"
+                        alt="vaccine-icon">
+                    <mat-card-title>
+                        Janssen
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        Iets dieper.
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content class="pb-3">
+                    <hr />
+                    <p>
+                        <strong>
+                            Het Janssen-vaccin voorkomt ziekte door het coronavirus. Dit vaccin is geschikt voor mensen
+                            vanaf 18 jaar. Het is voor 67% betrouwbaar.
+                        </strong>
+                    </p>
+                    <p>
+                        Het Janssen-vaccin hoeft niet diepgevroren bewaard te worden. Zo kan het vaccin goed verspreid
+                        worden onder bijvoorbeeld verpleeghuizen, instellingen en (kleinschalige) woonvormen.
+                    </p>
+                    <mat-card-subtitle>
+                        1 prik nodig
+                    </mat-card-subtitle>
+                    <p>
+                        Het coronavaccin van Janssen bestaat uit 1 prik. Vanaf 2 weken na de prik bent u maximaal
+                        beschermd tegen het coronavirus. De kans dat u ziek wordt door het coronavirus wordt dan klein.
+                    </p>
+                    <mat-card-subtitle>
+                        Bijwerkingen
+                    </mat-card-subtitle>
+                    <p>De meest voorkomende bijwerkingen zijn:</p>
+                    <ul>
+                        <li>Pijn op de prikplek</li>
+                        <li>Hoofdpijn</li>
+                        <li>Vermoeidheid</li>
+                        <li>Spier- en gewrichtspijn</li>
+                        <li>Misselijkheid</li>
+                        <li>Koorts</li>
+                    </ul>
+                    <p>Deze bijwerkingen zijn mild en verdwijnen ook weer snel (binnen 2 of 3 dagen). De bijwerkingen
+                        zijn vergelijkbaar met die van veel andere vaccinaties, zoals de griepprik.</p>
+                    <hr />
+                </mat-card-content>
+                <mat-card-footer>
+                    <p class="ml-3">Bron en meer info:
+                        <a mat-raised-button class="ml-2"
+                            href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-vaccinatie/soorten-coronavaccins/janssen"
                             target="blank">Rijksoverheid</a>
                     </p>
                 </mat-card-footer>

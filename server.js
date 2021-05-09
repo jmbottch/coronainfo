@@ -8,6 +8,7 @@ const app = express();
 const appname = "minorzt2"
 
 app.use(express.static(path.join(__dirname, 'dist', appname)));
+app.use(cors())
 
 app.get('*', (req,res) => {
     res.sendFile(path.join(__dirname, 'dist', appname, 'index.html'));
